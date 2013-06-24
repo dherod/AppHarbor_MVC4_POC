@@ -11,7 +11,7 @@ namespace AppHarbor_MVC4_POC.Models
     public class UsersContext : DbContext
     {
         public UsersContext()
-            : base("DefaultConnection")
+            : base("test1alias")
         {
         }
 
