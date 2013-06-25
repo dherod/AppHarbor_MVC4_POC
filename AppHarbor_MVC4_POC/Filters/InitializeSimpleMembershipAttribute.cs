@@ -29,6 +29,7 @@ namespace AppHarbor_MVC4_POC.Filters
 
                 try
                 {
+                    /*
                     using (var context = new UsersContext())
                     {
                         if (!context.Database.Exists())
@@ -37,6 +38,7 @@ namespace AppHarbor_MVC4_POC.Filters
                             ((IObjectContextAdapter)context).ObjectContext.CreateDatabase();
                         }
                     }
+                    */
 
                     WebSecurity.InitializeDatabaseConnection("test1alias", "UserProfile", "UserId", "UserName", autoCreateTables: true);
                 }
