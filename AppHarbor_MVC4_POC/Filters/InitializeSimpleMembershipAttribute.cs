@@ -38,7 +38,7 @@ namespace AppHarbor_MVC4_POC.Filters
                         }
                     }
 
-                    WebSecurity.InitializeDatabaseConnection("test1alias", "UserProfile", "UserId", "UserName", autoCreateTables: true);
+                    WebSecurity.InitializeDatabaseConnection("SimpleMembershipConnectionString", "UserProfile", "UserId", "UserName", autoCreateTables: true);
                 }
                 catch (Exception ex)
                 {
